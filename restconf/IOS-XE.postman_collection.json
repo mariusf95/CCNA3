@@ -1,0 +1,550 @@
+{
+	"info": {
+		"_postman_id": "1d99f836-dbee-40ba-a10b-fd2c1e819529",
+		"name": "IOS-XE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Operational Data",
+			"item": [
+				{
+					"name": "well-known",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://192.168.0.47/.well-known/host-meta",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								".well-known",
+								"host-meta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://192.168.0.47/restconf",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get capabilities",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/netconf-state/capabilities",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"netconf-state",
+								"capabilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Discover Yang supported modules",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/ietf-yang-library:modules-state/",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"ietf-yang-library:modules-state",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Yang Module",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/tailf/modules/ietf-routing/2015-05-25",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"tailf",
+								"modules",
+								"ietf-routing",
+								"2015-05-25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Operations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/operations",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"operations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Operations",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/operations/Cisco-IOS-XE-rpc:reload",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"operations",
+								"Cisco-IOS-XE-rpc:reload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ietf-interfaces oper data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/Cisco-IOS-XE-interfaces-oper:interfaces",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"Cisco-IOS-XE-interfaces-oper:interfaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ietf-interfaces oper data - Control plane",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/Cisco-IOS-XE-interfaces-oper:interfaces/interface=Control Plane",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"Cisco-IOS-XE-interfaces-oper:interfaces",
+								"interface=Control Plane"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Data Resources",
+			"item": [
+				{
+					"name": "get-config",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data?content=config",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data"
+							],
+							"query": [
+								{
+									"key": "content",
+									"value": "config"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ietf-interfaces",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/ietf-interfaces:interfaces/",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"ietf-interfaces:interfaces",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add description",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"description\": \"Test description from Postman\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet1/description",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"ietf-interfaces:interfaces",
+								"interface=GigabitEthernet1",
+								"description"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add loopback",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ietf-interfaces:interface\": {\n        \"name\": \"Loopback100\",\n        \"description\": \"Adaugata prin restconf\",\n        \"type\": \"iana-if-type:softwareLoopback\",\n        \"enabled\": true,\n        \"ietf-ip:ipv4\": {\n          \"address\": [\n            {\n              \"ip\": \"150.1.1.1\",\n              \"netmask\": \"255.255.255.0\"\n            }\n          ]\n        }\n      }\n\t }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/ietf-interfaces:interfaces",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"ietf-interfaces:interfaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit loopback",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n       \"description\": \"Editata prin restconf\"\n  \t }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/ietf-interfaces:interfaces/interface=Loopback100/description",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"ietf-interfaces:interfaces",
+								"interface=Loopback100",
+								"description"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ospf",
+			"item": [
+				{
+					"name": "ospf",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/yang-data+json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://192.168.0.47/restconf/data/Cisco-IOS-XE-ospf-oper:ospf-oper-data/ospf-state/ospf-instance=address-family-ipv4,2886755332/ospf-area=0/ospf-interface=GigabitEthernet2/ospf-neighbor=172.16.200.5/state",
+							"protocol": "https",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"47"
+							],
+							"path": [
+								"restconf",
+								"data",
+								"Cisco-IOS-XE-ospf-oper:ospf-oper-data",
+								"ospf-state",
+								"ospf-instance=address-family-ipv4,2886755332",
+								"ospf-area=0",
+								"ospf-interface=GigabitEthernet2",
+								"ospf-neighbor=172.16.200.5",
+								"state"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "cisco",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "student",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
