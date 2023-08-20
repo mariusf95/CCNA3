@@ -8,10 +8,10 @@ router_devnet = {"device_type": "cisco_ios",
           }
 
 router_local = {"device_type": "cisco_ios",
-          "ip": "192.168.100.64",
-          "username" : "student",
+          "ip": "192.168.100.66",
+          "username" : "cisco",
           "port" : "22",
-          "password": "cisco",
+          "password": "cisco123!",
           }
 
 lista_rutere = [router_local,router_devnet]
@@ -24,5 +24,5 @@ for router in lista_rutere:
     for i in commands:
         print("-" * 80)
         interface_cli = net_connect.send_command(i)
-        print("Output-ul comenzii " + i + " este:")
+        print("Output-ul comenzii '" + i + "' este:")
         print(interface_cli)

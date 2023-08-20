@@ -20,6 +20,7 @@
     ios_interface:
       name: Loopback21
       state: present
+ 
   - name: Add ip on loopback interface and description
     ios_config:
       lines:

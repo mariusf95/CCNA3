@@ -1,11 +1,11 @@
 [routers]
 
-192.168.100.64
+192.168.100.66
 
 [routers:vars]
 
-ansible_user=student
-ansible_password=cisco
+ansible_user=cisco
+ansible_password=cisco123!
 ansible_connection=network_cli
 ansible_network_os=ios
 ansible_port=22

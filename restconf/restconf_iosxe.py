@@ -6,8 +6,8 @@ from pprint import pprint
 # set up connection parameters in a dictionary
 router_devnet = {"ip": "sandbox-iosxe-recomm-1.cisco.com", "port": "443",
           "user": "developer", "password": "C1sco12345"}
-router_local = {"ip": "192.168.100.64", "port": "443",
-          "user": "student", "password": "cisco"}
+router_local = {"ip": "192.168.100.66", "port": "443",
+          "user": "cisco", "password": "cisco123!"}
 
 # set REST API headers
 headers = {"Accept": "application/yang-data+json",
